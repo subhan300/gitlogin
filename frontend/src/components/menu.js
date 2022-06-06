@@ -24,10 +24,10 @@ export const Navbar=()=> {
       >
         <ul className="menu " >
           <li>
-            <a href="/home" style={{color:"white"}}>Admin</a>
+            <a href="/admin" style={{color:"white"}}>Admin</a>
           </li>
           <li>
-            <a href="/about" style={{color:"white"}}>Ticket</a>
+            <a href="/ticket" style={{color:"white"}}>Ticket</a>
           </li>
           <li>
             <a href="/contact" style={{color:"white"}}>Contact Us</a>

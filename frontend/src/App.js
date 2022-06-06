@@ -1,17 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
-import {BasicTextFields,Navbar} from "./components"
+
+import "./main.css"
+import {Navbar} from "./components"
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+} from "react-router-dom";
+import Ticket from "./Ticket"
 import Admin from "./admin"
 function App() {
   return (
-    <div classname="management bd_blue"  style={{height:"100vh"}}>
-
+    <BrowserRouter>
     <Navbar />
- 
-   
+    <Routes>
+        <Route path="/" element={<div>dfd</div>} />
+        <Route path="/admin" element={<Admin />} />
+        <Route path="/ticket" element={<Ticket />} />
+      </Routes>
   
-    
-    </div>
+      </BrowserRouter>
+  
   );
 }
 
